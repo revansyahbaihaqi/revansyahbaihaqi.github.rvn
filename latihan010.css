@@ -1,0 +1,35 @@
+.bg1{
+	width:300px ;
+	height:100px ;
+	
+}
+
+.bg2{
+	width: 550px;
+	height: 300px;
+
+}
+.bg3{
+	width: 550px;
+	height: 300px
+}
+.bg4{
+	width: 220px;
+	height: 325px;
+}
+.text1{
+	text-align: center;
+}
+.new1{
+	width: 600px;
+	height: 350px;
+	display: block;
+    margin: 0px auto;
+    text-align: right;
+}
+.new2{
+	width: 600px;
+	height: 350px;
+	text-align: right;
+	border: 2px;
+}

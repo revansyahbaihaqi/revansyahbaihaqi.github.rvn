@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login form</title>
+	<link rel="stylesheet" type="text/css" href="tugasformlogin.css">
+	<script>
+		function authuser(){
+			var sukses = false;
+			var user = ['revan', 'Admin', 'User'];
+			var password = ['1234', 'min123', 'ser123'];
+
+			var name = document.getElementById("username").value;
+			var pass = document.getElementById("password").value;
+
+			if((name == null || name == '')||(pass == null || pass =='')){
+				alert("Harus Di Isi");
+				return;
+			}else{
+				for (var i = 0; i<user.length; i++){
+					if(user[i].toLowerCase() == name.toLowerCase() && password[i].toLowerCase() == pass.toLowerCase()){
+						document.location.href = "latihan010.html";
+						sukses = true;
+						break;
+					}
+				}
+				if(!sukses){
+					alert("Salah Memasukan Password");
+					return;
+					
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	
+
+	<div class="kotak_login">
+		<img class="imglog" src="keren.jfif" alt="">
+		<h3 class="tulisan_login">Silahkan Login</h3> 
+
+		<form>
+			<label>Username</label>
+			<input type="text" id="username" name="username" class="form_login" placeholder="username atau email.." >
+
+			<label>Password</label>
+			<input type="Password" id="password" name="Password" class="form_login" placeholder="Password.." >
+
+			   
+         
+			<div class="chexbox">
+              <input type="checkbox" name="chek" > Remember me</form>
+            </div>
+			<br>
+			<br>
+
+            <input type="button" class="tombol_login" value="LOGIN" onclick="authuser()">
+
+			<br>
+			<br>
+
+			<center>
+				<a class="link" href="">KEMBALI</a>
+			</center>
+			
+
+		</form>
+	</div>
+
+
+</body>
+</html>
